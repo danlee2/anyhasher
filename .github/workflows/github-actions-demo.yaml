@@ -1,0 +1,9 @@
+name: Continuous Integration
+on: [push]
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - runs: cd backend
+      - runs: npm i
+      - runs: npm run build 
